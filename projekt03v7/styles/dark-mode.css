@@ -1,0 +1,111 @@
+/* Barva písma */
+.color-dark {
+  color: var(--gray-light01);
+}
+
+/* Navigace */
+
+.icon-dark {
+  background-image: url(../img/icon-dark.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  border-radius: 20% 20% 50% 50%;
+}
+
+.icon-dark:hover {
+  background-image: url(../img/icon-light.png);
+  background-color: var(--yellow-light01);
+}
+
+.layer01-dark {
+  background-image: url(../img/header-dark-bcg.png);
+  min-height: 100dvh;
+  width: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.layer02-dark {
+  background-image: url(../img/header-dark-menu-bcg.png);
+  width: 100%;
+  height: 90%;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.nav-dark {
+  background-color: var(--dark-brown-lighter);
+}
+
+.nav-link-dark {
+  position: relative;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+  color: var(--yellow-light01);
+  padding: 3px 0;
+  transition: 0.5s;
+}
+
+.nav-link-dark::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--yellow-light01);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.nav-link-dark:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hamburger */
+.hamburger-dark,
+.hamburger-dark::after,
+.hamburger-dark::before {
+  background: var(--yellow-light01);
+}
+
+/* Sekce s fotkami */
+.section-dark01 {
+  background: var(--dark-brown);
+}
+
+/* Formulář */
+.section-dark02 {
+  background: var(--dark-brown-lighter);
+}
+
+.form-dark {
+  background: var(--dark-brown-lighter);
+  color: var(--gray-light01);
+}
+
+.button-dark {
+  background: var(--dark-brown);
+  color: var(--gray-light01);
+}
+
+/* Footer */
+.footer-dark {
+  background: var(--dark-brown-lighter);
+}
+
+@media screen and (width <= 768px) {
+  /* Menu */
+  .menu-query-dark {
+    background: var(--dark-brown-lighter);
+  }
+}
